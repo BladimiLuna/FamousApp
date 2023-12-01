@@ -1,6 +1,6 @@
 
 var url = window.location.href;
-var swLocation = '/FamousApp/sw.js';
+var swLocation = '/FamousApp/public/sw.js';
 
 var swReg;
 
