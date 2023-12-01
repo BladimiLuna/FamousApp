@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FamousApp</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/libs/plugins/mdtoast.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+    <link rel="shortcut icon" type="image/jpg" href="img/FamousApp.jpg"/>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Android -->
+    <meta name="theme-color" content="#3498db">
+
+    <!-- IOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+    <link rel="apple-touch-icon" href="img/FamousApp.jpg">
+
+
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="apple-mobile-web-app-title" content="FamousApp">
+
+</head>
+<body>
+        <!-- Titulo -->
+        <span class="first"> 
+            <span id="salir-btn" class="fa fa-sign-out-alt out oculto animated fadeIn"></span>
+            <span id="titulo">
+                <i class=""></i>
+                ¿Que Famoso quieres ser?
+            </span>
+            <span id="nuevo-btn" class="fa fa-pen-square new oculto animated fadeIn fast"></span>
+        </span>
+        <!-- Fin Titulo -->
+
+        <!-- Modal -->
+        <div id="modal" class="oculto">
+            <img id="modal-avatar" src="">
+
+            <span class="first"> 
+                <span id="titulo-modal">Postea!!</span>
+                <span id="cancel-btn" class="fa fa-times"></span>
+            </span>
+            
+
+            <div class="nuevo-mensaje">
+                <textarea id="txtMensaje" placeholder="Nuevo Post" rows="5"></textarea>
+
+                <div class="camara-contenedor fadeIn fast oculto" align="center">
+                    <video id="player" autoplay style="height: 300px;"></video>
+
+                    <button id="tomar-foto-btn">
+                        <i class="fa fa-camera"></i>
+                        Demuestrate!!
+                    </button>
+                </div>
+
+            </div>
+
+            
+            <!-- boton de enviar -->
+
+            <div id="post-btn" class="fab">
+                <i class="fa fa-paper-plane"></i>
+            </div>
+
+            <div id="location-btn" class="fab-marker">
+                <i class="fa fa-map-marker-alt"></i>
+            </div>
+
+            <div id="photo-btn" class="fab-photo">
+                <i class="fa fa-camera"></i>
+            </div>
+
+        </div>
+        <!-- Fin Modal -->
+
+
+        <!-- Seleccion de personaje -->
+        <div id="seleccion" class="seleccion animated fadeIn fast" align="center">
+        
+            <!-- Botón de notificaciones -->
+            <button class="oculto btn-noti-activadas">Notificaciones Activadas</button>
+            <button class="oculto btn-noti-desactivadas">Notificaciones Desactivadas</button>
+            <!-- Fin de boton de notificaciones -->
+
+            <div>
+                <img data-user="CR7" src="img/avatars/CR7.jpg" alt="CR7" class="seleccion-avatar">
+            </div>
+
+            <div>
+                <img data-user="natanael" src="img/avatars/natanael.jpg" alt="natanael" class="seleccion-avatar">
+            </div>
+
+            <div>
+                <img data-user="ryan" src="img/avatars/ryan.jpg" alt="ryan" class="seleccion-avatar">
+            </div>
+
+            <div>
+                <img data-user="dojacat" src="img/avatars/dojacat.jpg" alt="dojacat" class="seleccion-avatar">
+            </div>
+
+            <div>
+                <img data-user="scarlet" src="img/avatars/scarlet.jpg" alt="scarlet" class="seleccion-avatar">
+            </div>
+
+        </div>
+
+        <!-- FIN Seleccion de personaje -->
+
+        <!-- Lista de mensajes -->
+        <ul id="timeline" class="timeline oculto">
+
+        </ul>
+        <!-- Fin Lista de mensajes -->
+
+
+      
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/libs/plugins/mdtoast.min.js"></script>
+        
+        <!-- Camara Class -->
+        <script src="js/camara-class.js"></script>
+        <script src="js/app.js"></script>
+    
+</body>
+</html>
