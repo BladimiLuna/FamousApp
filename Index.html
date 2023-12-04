@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirección instantánea</title>
+  <script type="text/javascript">
+    // Verifica si la URL actual es la página principal de GitHub Pages
+    if (window.location.pathname === '/FamousApp/' || window.location.pathname === '/FamousApp/index.html') {
+      // Redirige al index.html dentro de la carpeta public
+      window.location.href = '/FamousApp/public/';
+    }
+  </script>
+</head>
+<body>
+  <p>Redireccionando a la carpeta public...</p>
+</body>
+</html>
